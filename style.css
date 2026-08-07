@@ -1,0 +1,354 @@
+/* ===========================
+   Lavender Minimal Theme
+=========================== */
+
+:root{
+
+    --bg:#FAF8FF;
+    --card:#FFFFFF;
+    --text:#27272A;
+    --secondary:#71717A;
+
+    --accent:#8B5CF6;
+    --accent-dark:#7C3AED;
+
+    --border:#EDE9FE;
+    --hover:#F8F5FF;
+    --badge:#F3EDFF;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--bg);
+
+    font-family:'Inter',sans-serif;
+
+    color:var(--text);
+
+    padding:50px;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Day Buttons
+=========================== */
+
+.days{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:45px;
+
+}
+
+.day{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    color:var(--secondary);
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.day:hover{
+
+    background:var(--hover);
+
+}
+
+.day.active{
+
+    background:var(--accent);
+
+    color:white;
+
+    border-color:var(--accent);
+
+    box-shadow:0 10px 25px rgba(124,58,237,.18);
+
+}
+
+/* ===========================
+   Schedule
+=========================== */
+
+#schedule{
+
+    width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    transition:opacity .3s;
+
+}
+
+/* ===========================
+   Class Card
+=========================== */
+
+.class-card{
+    margin-bottom: 20px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-left:6px solid var(--accent);
+    border-radius:20px;
+    padding:22px 28px;
+    display:grid;
+    grid-template-columns:110px 1fr auto;
+    align-items:center;
+    transition:.25s;
+    box-shadow:0 10px 28px rgba(124,58,237,.06);
+
+}
+
+.class-card:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 16px 40px rgba(124,58,237,.12);
+
+}
+
+/* ===========================
+   Time
+=========================== */
+
+.time{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.time span{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.time small{
+
+    margin-top:5px;
+
+    color:var(--secondary);
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   Subject
+=========================== */
+
+.details h3{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.details p{
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Credit Badge
+=========================== */
+
+.credit{
+
+    background:var(--badge);
+
+    color:var(--accent-dark);
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Lunch Break
+=========================== */
+
+.break-card{
+
+    background: var(--hover);
+
+    border: 2px dashed var(--accent);
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    text-align: center;
+
+    color: var(--accent-dark);
+
+    font-weight: 600;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+.break-card small{
+
+    color: var(--secondary);
+
+    font-weight: 500;
+
+}
+/* ===========================
+   Current Class
+=========================== */
+
+.current{
+
+    background:#F5F3FF;
+
+    border-left:8px solid var(--accent-dark);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:950px){
+
+    body{
+
+        padding:25px;
+
+    }
+
+    #schedule{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    .days{
+
+        flex-wrap:wrap;
+
+    }
+
+    .class-card{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+        text-align:center;
+
+    }
+
+    .credit{
+
+        justify-self:center;
+
+    }
+}
+
+.empty-day{
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(124,58,237,.08);
+
+}
+
+.empty-day h2{
+
+    color: var(--accent-dark);
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+
+}
+
+.empty-day p{
+
+    color: var(--secondary);
+
+    font-size: 17px;
+
+}
