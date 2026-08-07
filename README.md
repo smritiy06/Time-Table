@@ -43,7 +43,3 @@ Time-Table/
 **Smriti Yadav**
 
 GitHub: https://github.com/smritiy06
-
----
-
-Made with 💜
