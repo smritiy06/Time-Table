@@ -1,20 +1,22 @@
-/* ===========================
-   Lavender Minimal Theme
-=========================== */
-
 :root{
 
-    --bg:#FAF8FF;
+    --bg: #f2fef6;
+
     --card:#FFFFFF;
-    --text:#27272A;
-    --secondary:#71717A;
 
-    --accent:#8B5CF6;
-    --accent-dark:#7C3AED;
+    --text:#26332D;
 
-    --border:#EDE9FE;
-    --hover:#F8F5FF;
-    --badge:#F3EDFF;
+    --secondary:#718078;
+
+    --accent:#4F9D78;
+
+    --accent-dark:#397A5B;
+
+    --border:#DCEBE2;
+
+    --hover:#EFF8F3;
+
+    --badge:#E5F3EB;
 
 }
 

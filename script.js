@@ -74,4 +74,68 @@ buttons.forEach(button=>{
 
 });
 
-renderSchedule("Monday");
+function getToday() {
+
+    const days = [
+
+        "Sunday",
+
+        "Monday",
+
+        "Tuesday",
+
+        "Wednesday",
+
+        "Thursday",
+
+        "Friday",
+
+        "Saturday"
+
+    ];
+
+    return days[new Date().getDay()];
+
+}
+
+function setActiveDay(day) {
+
+    buttons.forEach(button => {
+
+        button.classList.remove("active");
+
+        if (button.dataset.day === day) {
+
+            button.classList.add("active");
+
+        }
+
+    });
+
+}
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const day = button.dataset.day;
+
+        dayTitle.textContent = day;
+
+        setActiveDay(day);
+
+        renderSchedule(day);
+
+    });
+
+});
+
+/* Automatically open today's timetable */
+
+const today = getToday();
+
+dayTitle.textContent = today;
+
+setActiveDay(today);
+
+renderSchedule(today);
