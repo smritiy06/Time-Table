@@ -19,12 +19,6 @@
     --badge:#E5F3EB;
 
 }
-body {
-    background: var(--bg);
-    font-family: 'Inter', sans-serif;
-    color: var(--text);
-    padding: 50px;
-}
 *{
     margin:0;
     padding:0;
@@ -34,11 +28,8 @@ body {
 body{
 
     background:var(--bg);
-
     font-family:'Inter',sans-serif;
-
     color:var(--text);
-
     padding:50px;
 
 }
