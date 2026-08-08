@@ -19,7 +19,9 @@
     --badge:#E5F3EB;
 
 }
-
+body {
+    background: lime !important;
+}
 *{
     margin:0;
     padding:0;
