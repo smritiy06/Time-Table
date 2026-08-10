@@ -12,9 +12,9 @@ const timetable = {
         {
             start: "09:30",
             end: "10:25",
-            subject: "Experimental Methods for Engineers",
-            code: "CM1313",
-            faculty: "M A Hassan",
+            subject: "Design Thinking",
+            code: "CM1311",
+            faculty: "A K Mandal",
             credits: "3 Credits"
         },
         {
@@ -28,9 +28,9 @@ const timetable = {
         {
             start: "11:30",
             end: "12:25",
-            subject: "Design Thinking",
-            code: "CM1311",
-            faculty: "A K Mandal",
+            subject: "Experimental Methods for Engineers",
+            code: "CM1313",
+            faculty: "M A Hassan",
             credits: "3 Credits"
         }
     ],
