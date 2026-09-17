@@ -2,7 +2,7 @@
 
 A clean, responsive, and minimal timetable web application built using **HTML, CSS, and JavaScript**.
 
-Designed with a soft **Lavender Minimal** theme, the application provides an elegant way to view weekly schedules through a dynamic, card-based interface.
+Designed with a soft **Emerald** theme, the application provides an elegant way to view weekly schedules through a dynamic, card-based interface.
 
 ---
 
