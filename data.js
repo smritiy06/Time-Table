@@ -148,7 +148,7 @@ const timetable = {
         },
         {
             start: "04:00",
-            end: "04:55",
+            end: "05:55",
             subject: "Machine Learning Lab",
             code: "CM1306",
             faculty: "D Kumar",
